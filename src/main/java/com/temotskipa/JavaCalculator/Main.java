@@ -1,12 +1,14 @@
 import com.temotskipa.JavaCalculator.Calculator;
 
+import static java.lang.IO.readln;
+
 void main() {
-    String input1 = IO.readln("Enter first number:");
+    String input1 = readln("Enter first number:");
     if (input1 == null) {
         IO.println("No input provided.");
         return;
     }
-    String input2 = IO.readln("Enter second number:");
+    String input2 = readln("Enter second number:");
     if (input2 == null) {
         IO.println("No input provided.");
         return;
