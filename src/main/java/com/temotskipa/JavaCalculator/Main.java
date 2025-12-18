@@ -1,16 +1,17 @@
-import com.temotskipa.JavaCalculator.Calculator;
-
+import static com.temotskipa.JavaCalculator.Calculator.handleDecimal;
+import static com.temotskipa.JavaCalculator.Calculator.handleInteger;
+import static java.lang.IO.println;
 import static java.lang.IO.readln;
 
 void main() {
     String input1 = readln("Enter first number:");
     if (input1 == null) {
-        IO.println("No input provided.");
+        println("No input provided.");
         return;
     }
     String input2 = readln("Enter second number:");
     if (input2 == null) {
-        IO.println("No input provided.");
+        println("No input provided.");
         return;
     }
 
@@ -19,8 +20,8 @@ void main() {
 
     boolean isDecimal = input1.contains(".") || input2.contains(".");
     if (isDecimal) {
-        Calculator.handleDecimal(input1, input2);
+        handleDecimal(input1, input2);
     } else {
-        Calculator.handleInteger(input1, input2);
+        handleInteger(input1, input2);
     }
 }

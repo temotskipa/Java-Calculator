@@ -10,10 +10,10 @@ import static java.lang.IO.readln;
 public class Calculator {
     public static void handleDecimal(String input1, String input2) {
         try {
-            BigDecimal num1 = new BigDecimal(input1);
-            BigDecimal num2 = new BigDecimal(input2);
+            var num1 = new BigDecimal(input1);
+            var num2 = new BigDecimal(input2);
 
-            String opInput = readln("Select an operation: 1. Addition 2. Subtraction 3. Multiplication 4. Division");
+            var opInput = readln("Select an operation: 1. Addition 2. Subtraction 3. Multiplication 4. Division");
             if (opInput == null) {
                 println("No operation selected.");
                 return;
@@ -46,10 +46,10 @@ public class Calculator {
 
     public static void handleInteger(String input1, String input2) {
         try {
-            BigInteger num1 = new BigInteger(input1);
-            BigInteger num2 = new BigInteger(input2);
+            var num1 = new BigInteger(input1);
+            var num2 = new BigInteger(input2);
 
-            String opInput = readln("Select an operation: 1. Addition 2. Subtraction 3. Multiplication 4. Division 5. Remainder 6. Power");
+            var opInput = readln("Select an operation: 1. Addition 2. Subtraction 3. Multiplication 4. Division 5. Remainder 6. Power");
             if (opInput == null) {
                 println("No operation selected.");
                 return;
